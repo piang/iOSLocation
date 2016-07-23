@@ -24,7 +24,7 @@ class ViewController: UIViewController,MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        locationManager = PYLocationManager()
+        locationManager = PYLocationManager.shareLocationManger
         locationMapView.delegate = self
         locationMapView.userLocation.title = "当前位置"
         /**
